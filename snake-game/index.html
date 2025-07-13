@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>经典贪吃蛇游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>贪吃蛇游戏</h1>
+        <div class="score-panel">
+            <span>得分: <span id="score">0</span></span>
+            <span>最高分: <span id="high-score">0</span></span>
+        </div>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div class="controls">
+            <button onclick="changeDirection('UP')">↑</button>
+            <div class="middle-controls">
+                <button onclick="changeDirection('LEFT')">←</button>
+                <button onclick="changeDirection('DOWN')">↓</button>
+                <button onclick="changeDirection('RIGHT')">→</button>
+            </div>
+            <button id="restart-btn" onclick="restartGame()">重新开始</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
